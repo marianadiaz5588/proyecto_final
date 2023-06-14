@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.body{
+   
+    background-color: rgb(236, 133, 154);
+   
+}
+.body2{
+    background-color: rgb(73, 158, 228);
+
+}
+.body3{
+    background-color: rgb(221, 212, 129);
+
+}
+.body4{
+    background-color: rgb(243, 191, 47);
+
+}
+
+.body5{
+    background-color: rgb(178, 136, 235);
+}
+
+.slogan{
+   
+    margin: 2px;
+    padding: 0px;
+    border: 2px;
+    color: hwb(0 100% 0%);
+    background: linear-gradient(90deg, rgb(204, 92, 167) 0%, rgb(200, 238, 34) 35%, rgb(202, 34, 34) 100%);
+    text-shadow: 4px darkgray;
+    font-size: large;
+    text-align: center;
+ }  
+   
+
+
+ /* Encabezado*/ 
+.encabezado{
+    margin: 0;
+    padding: 0;
+    background-image: url(./portada.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+ #logo{
+    
+    text-align: center; 
+    background-image: deeppink;       
+}
+
+.card-title{
+    text-align: center;
+    
+}
+
+#slogan{
+   
+    color: hwb(0 100% 0%);
+    background: linear-gradient(90deg, rgb(22, 100, 165) 0%, rgba(67,103,17,1) 35%, rgba(0,212,255,1) 100%);
+    text-shadow: 4px darkgray;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: large;
+    text-align: center;
+ }
+
+.cv{
+    text-align: center;
+    font-size: xx-large;
+    align-content: center;
+}
+
+.info{
+
+    margin-left: 0px;
+    padding-left: 50px;
+    align-content: center;
+    background-color: rgb(192, 41, 104);
+    text-align: center;
+    color: black;
+    overflow-y: scroll;
+    height: 200px;
+    width: 90%;
+}
+ /* pie*/  
+.pie{
+    background-image: url(verdefondo.jpg);
+    border: 3px;
+    border-style: solid;
+    border-color: darkgreen;
+    
+}
+.info_contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: auto;
+   
+}
+.logo_final{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.redes{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+
+}
+.redes a{
+    font-size: 40px;
+}
+
+.facebook{
+    color: blue;
+
+}
+.instagram{
+    color: deeppink;
+
+}
+.whatsapp{
+    color: rgb(17, 226, 17);
+}
+.redes a:hover{
+    color: gold;
+    transform: scale(1.5);
+    transition: all ease 400ms;
+}
+
+.suscribir{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.input{
+    background-color: greenyellow;
+    border: solid 2px chartreuse;
+    padding: 5px 10px;
+}
+.button{
+    padding: 5px 10px;
+    background-color: yellow ;
+    color: aliceblue;
+    font-size: 18px;
+
+}
+
+
+
+h6{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    color: hwb(323 12% 27%);
+    background-color: rgb(79, 152, 221);
+    text-shadow: 4px darkgray;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: large;
+    text-align: center;
+
+}
+
+.final{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: gold;
+    color: aliceblue;
+    align-items: center;
+}
+#retorno :hover{
+    color: gold;
+    transform: scale(1.5);
+    transition: all ease 400ms;
+
+
+}

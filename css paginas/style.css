@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body {
+
+    background-color: rgb(206, 93, 116);
+
+}
+
+
+
+
+
+/* Encabezado*/
+.encabezado {
+    margin: 0;
+    padding: 0;
+    background-image: url(./portada.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+#logo {
+
+    text-align: center;
+    background-image: deeppink;
+}
+
+
+#slogan {
+
+    color: hwb(0 100% 0%);
+    background: linear-gradient(90deg, rgb(22, 100, 165) 0%, rgba(67, 103, 17, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    text-shadow: 4px darkgray;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: large;
+    text-align: center;
+}
+
+/*menu navegador*/
+.navegador {
+    margin: 0;
+    padding: 0;
+    grid-area: navegador;
+
+    /*gradiente*/
+    background: rgb(206, 240, 38);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(206, 240, 38, 1) 45%, rgba(206, 240, 38, 1) 53%, rgba(234, 185, 45, 1) 64%, rgba(169, 204, 12, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(206, 240, 38, 1) 45%, rgba(206, 240, 38, 1) 53%, rgba(234, 185, 45, 1) 64%, rgba(169, 204, 12, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(206, 240, 38, 1) 45%, rgba(206, 240, 38, 1) 53%, rgba(234, 185, 45, 1) 64%, rgba(169, 204, 12, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cef026', endColorstr='#a9cc0c', GradientType=1);
+    /* IE6-9 */
+    border-style: solid;
+    border-color: rgb(116, 224, 15);
+    border-width: 5px;
+}
+
+.navegador :hover {
+    color: rgb(17, 206, 17);
+    background-color: gold;
+}
+
+.navegador2 {
+
+    list-style: none;
+    display: block;
+    float: right;
+}
+
+h5 {
+    margin: 0;
+    padding: 0px 5px 0px 5px;
+    color: rgb(39, 95, 13);
+    font-size: medium;
+}
+
+.slogan2 {
+    margin: 2px;
+    padding: 0px;
+    border: 2px;
+    color: hwb(0 100% 0%);
+    background: linear-gradient(90deg, rgb(22, 100, 165) 0%, rgba(67, 103, 17, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    text-shadow: 4px darkgray;
+    font-size: xx-large;
+    font-family: 'Sansita Swashed', cursive;
+    text-align: center;
+}
+
+/*  lateral izquierdo menu despegable*/
+
+.menu {
+    margin: 0;
+    padding: 0;
+}
+
+.contenido_Menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 16px;
+}
+
+.contenido_Menu li {
+    border-bottom: 1px solid #8d17d1;
+}
+
+.contenido_Menu a {
+    box-sizing: border-box;
+    color: rgb(253, 216, 53);
+    background: rgb(79, 152, 221);
+    display: block;
+    width: 100%;
+    padding: 6px 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.contenido_Menu ul {
+    height: 0px;
+    overflow: hidden;
+    transition: var(--estado-buda);
+    counter-reset: items;
+}
+
+.contenido_Menu ul li {
+    counter-increment: items;
+}
+
+
+.contenido_Menu li:hover ul {
+    height: calc(var(--cantidad-items) * var(--cada-item));
+
+    background: rgb(21, 11, 207);
+    background: linear-gradient(90deg, rgb(22, 100, 165) 0%, rgba(67, 103, 17, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+
+
+}
+
+
+.contenido_Menu ul a {
+    background: transparent;
+}
+
+
+
+
+/*  centro carrusel*/
+.carrusel {
+    margin-bottom: 5px;
+    padding: 0;
+    align-items: center;
+    border-style: double;
+    border: 38px;
+    border-color: #1ba157;
+}
+
+/*  lateral derecho Novedades*/
+.novedades {
+    height: 500px
+}
+
+
+article {
+    margin-left: 0px;
+    padding-left: 0px;
+    background-color: antiquewhite;
+    text-align: left;
+    color: black;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.titulos_novedades {
+    display: block;
+    padding-left: 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: rgb(95, 138, 35) 85%;
+    font-size: large;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/*opiniones clientes*/
+#carouscarouselExampleSlidesOnlyel {
+    height: 490px;
+}
+
+/*  abajo centro Video de Tiendas oficiales*/
+.video {
+    align-content: center;
+    height: 500px;
+}
+
+
+/* formulario de Contacto*/
+.formulario {
+
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #1ba157;
+    border-width: 2px;
+    background-image: url(formulario.png);
+    background-size: 100%;
+    background-position: center;
+    height: 490px;
+
+
+
+}
+
+.textoformulario {
+    text-align: initial;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+
+.tituloFormulario {
+    background-color: rgb(189, 135, 240);
+    text-align: center;
+    border-style: solid;
+    color: rgb(36, 31, 33);
+    margin: 5px;
+    border-color: blanchedalmond;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+}
+
+
+/* pie*/
+.pie {
+    background-image: url(verdefondo.jpg);
+    border: 3px;
+    border-style: solid;
+    border-color: darkgreen;
+
+}
+
+.info_contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: auto;
+
+}
+
+.logo_final {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.redes {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+
+}
+
+.redes a {
+    font-size: 40px;
+}
+
+.facebook {
+    color: blue;
+
+}
+
+.instagram {
+    color: deeppink;
+
+}
+
+.whatsapp {
+    color: rgb(17, 226, 17);
+}
+
+.redes a:hover {
+    color: gold;
+    transform: scale(1.5);
+    transition: all ease 400ms;
+}
+
+.suscribir {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input {
+    background-color: greenyellow;
+    border: solid 2px chartreuse;
+    padding: 5px 10px;
+}
+
+.button {
+    padding: 5px 10px;
+    background-color: yellow;
+    color: aliceblue;
+    font-size: 18px;
+
+}
+
+
+
+h6 {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    color: hwb(323 12% 27%);
+    background-color: rgb(79, 152, 221);
+    text-shadow: 4px darkgray;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: large;
+    text-align: center;
+
+}
+
+.final {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: gold;
+    color: aliceblue;
+    align-items: center;
+}
+
+#retorno :hover {
+    color: gold;
+    transform: scale(1.5);
+    transition: all ease 400ms;
+
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: rgb(247, 240, 240);
+
+    }
+
+    h5 {
+        margin: 0;
+        padding: 0px 5px 0px 5px;
+        color: rgb(90, 13, 190);
+        font-size: xx-small;
+        text-align: left;
+    }
+
+    .navegador2 {
+
+        list-style: none;
+        display: block;
+        float: left;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    main {
+        background-image: url(./fondo.jpg);
+
+
+
+    }
+
+    h5 {
+        margin: 0;
+        padding: 0px 5px 0px 5px;
+        color: rgb(90, 13, 190);
+        font-size: medium;
+        text-align: left;
+    }
+
+    .navegador2 {
+
+        list-style: none;
+        display: block;
+        float: left;
+    }
+
+}
